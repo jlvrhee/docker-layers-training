@@ -18,11 +18,11 @@ $ sh installdive.sh
 ```
 
 # Excersise 1 - Create image with commands in 1 or multiple layers
-1) Build the dockerfile with a RUN command per shell command
+1) Build the dockerfile with a RUN command per shell command, resulting in an image layer per shell command
 ```
 $ docker build -f dockerfile1_1 -t dockerfile1_1 .
 ```
-2) Build the dockerfile with 1 RUN command for a shell commands
+2) Build the dockerfile with 1 RUN command for a shell commands, resulting in 1 image layer for all shell commands
 ```
 $ docker build -f dockerfile1_2 -t dockerfile1_2 .
 ```

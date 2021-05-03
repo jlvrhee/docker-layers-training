@@ -10,7 +10,7 @@ git pull https://github.com/jlvrhee/docker-layers-training.git
 ```
 
 Install dive
-'''
+```
 $ cd docker-layers-training
 $ sh installdive.sh
-'''
+```

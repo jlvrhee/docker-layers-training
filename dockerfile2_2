@@ -1,2 +1,4 @@
-FROM python:slim
-RUN pip install --no-cache-dir aiohttp
+FROM python:alpine
+RUN apk update && \
+    apk add build-base && \
+    pip install --no-cache-dir aiohttp && \

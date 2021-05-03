@@ -2,3 +2,5 @@ FROM python:alpine
 RUN apk update && \
     apk add build-base && \
     pip install --no-cache-dir aiohttp && \
+    apk del installbuild-base && \
+    rm -rf /var/cache/apk/*

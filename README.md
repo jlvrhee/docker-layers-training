@@ -6,7 +6,7 @@ Note : These excersises have been tested to work
 # Preparations
 Pull git project
 ```
-git pull https://github.com/jlvrhee/docker-layers-training.git
+git clone https://github.com/jlvrhee/docker-layers-training.git
 ```
 
 Install dive

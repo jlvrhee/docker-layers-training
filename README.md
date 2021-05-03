@@ -40,3 +40,4 @@ $ docker history dockerfile1_2
 $ dive dockerfile1_1
 $ dive dockerfile1_2
 ```
+Note : For key bindings within dive, see https://github.com/wagoodman/dive#keybindings

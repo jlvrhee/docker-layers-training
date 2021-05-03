@@ -1,7 +1,8 @@
 # Docker Layers Training
 Below are some excercise that can be executed after the training. 
 
-Note : These excersises have been tested to work  
+Note : These excersises have been tested to work with https://labs.play-with-docker.com/
+**TIP : With play-with-docker linux console screen you can paste text with CTRL-SHIFT-v
 
 # Preparations
 1) Pull git project:

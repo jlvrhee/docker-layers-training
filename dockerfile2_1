@@ -1,4 +1,4 @@
 FROM python:alpine
 RUN apk update && \
     apk add build-base && \
-    pip install --no-cache-dir aiohttp && \
+    pip install --no-cache-dir aiohttp

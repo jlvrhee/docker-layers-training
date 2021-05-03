@@ -1,0 +1,6 @@
+FROM python:alpine
+RUN apk update && \
+    apk add build-base && \
+    pip install aiohttp && \
+    apk del build-base && \
+    rm -rf /var/cache/apk/*

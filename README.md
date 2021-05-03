@@ -47,15 +47,19 @@ Note : For key bindings within dive, see https://github.com/wagoodman/dive#keybi
 ```
 $ docker rmi dockerfile1_1 dockerfile1_2 python:alpine
 ```
-2) Time how long the building takes of aiohttp package using python:alpine base image
+2) Time how long the building takes of aiohttp package using python:alpine base image without removing compiler and apk cache
 ```
 $ time docker build -f dockerfile2_1 -t dockerfile2_1 .
 ```
-3) Time how long the building takes of aiohttp package using python:slim base image
+3) Time how long the building takes of aiohttp package using python:slim base image with removing compiler and apk cache
 ```
 $ time docker build -f dockerfile2_2 -t dockerfile2_2 .
 ```
-4) Check total image size of dockerfile2_1, dockerfile2_2 and dockerfile2_3 image
+4) Time how long the building takes of aiohttp package using python:slim base image
+```
+$ time docker build -f dockerfile2_3 -t dockerfile2_3 .
+```
+5) Check total image size of dockerfile2_1, dockerfile2_2 and dockerfile2_3 image and explain differences
 ```
 $ docker images | grep dockerfile2
 ```

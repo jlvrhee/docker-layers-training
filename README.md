@@ -17,7 +17,7 @@ $ cd docker-layers-training
 $ sh installdive.sh
 ```
 
-# Excersise 1 - Create image with commands in 1 or multiple layers
+# Exercise 1 - Create image with commands in 1 or multiple layers
 1) Build the dockerfile with a RUN command per shell command, resulting in an image layer per shell command
 ```
 $ docker build -f dockerfile1_1 -t dockerfile1_1 .
@@ -42,7 +42,7 @@ $ dive dockerfile1_2
 ```
 Note : For key bindings within dive, see https://github.com/wagoodman/dive#keybindings
 
-# Excersise 2 - Building times with python:alpine and python:slim
+# Exercise 2 - Building times with python:alpine and python:slim
 1) Remove all existing images
 ```
 $ docker rmi dockerfile1_1 dockerfile1_2 python:alpine

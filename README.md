@@ -55,3 +55,7 @@ $ time docker build -f dockerfile2_1 -t dockerfile2_1 .
 ```
 $ time docker build -f dockerfile2_2 -t dockerfile2_2 .
 ```
+4) Check total image size of dockerfile2_1, dockerfile2_2 and dockerfile2_3 image
+```
+$ docker images | grep dockerfile2
+```

@@ -1,6 +1,6 @@
 FROM python:alpine
 RUN apk update && \
          apk add build-base && \
-         pip --no-cache-dir aiohttp && \
+         pip --no-cache-dir install aiohttp && \
          apk del installbuild-base && \
          rm -rf /var/cache/apk/*

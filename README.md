@@ -41,3 +41,17 @@ $ dive dockerfile1_1
 $ dive dockerfile1_2
 ```
 Note : For key bindings within dive, see https://github.com/wagoodman/dive#keybindings
+
+# Excersise 2 - Building times with python:alpine and python:slim
+1) Remove all existing images
+```
+$ docker rmi dockerfile1_1 dockerfile1_2 python:alpine
+```
+2) Time how long the building takes of aiohttp package using python:alpine base image
+```
+$ time docker build -f dockerfile2_1 -t dockerfile2_1 .
+```
+3) Time how long the building takes of aiohttp package using python:slim base image
+```
+$ time docker build -f dockerfile2_2 -t dockerfile2_2 .
+```
